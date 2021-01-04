@@ -25,7 +25,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .TodoForm input {
@@ -96,4 +96,17 @@ body {
 .Error p svg {
   margin-bottom: -6px;
   margin-right: 5px;
+}
+
+@media (max-width: 400px) {
+  .TodoForm {
+    display: flex;
+    width: 100%;
+  }
+  .TodoForm input {
+    width: 80%;
+  }
+  .TodoForm button{
+    width: 20%;
+  }
 }
